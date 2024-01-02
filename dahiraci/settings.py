@@ -75,9 +75,18 @@ WSGI_APPLICATION = "dahiraci.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'badge_isjj',
+
+        'USER': 'badge',
+
+        'PASSWORD': 'sHIVRiZu7a3x276Chspgh1moXGQ3rXou',
+
+        'HOST': 'dpg-cm66dkgcmk4c73cu4ek0-a.oregon-postgres.render.com',
+        
+        'PORT': '5432'
     }
 }
 
