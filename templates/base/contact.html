@@ -1,0 +1,155 @@
+{% extends 'index.html' %}
+ {% block content %} 
+ {% load static %}
+
+
+        <!-- start of hero -->
+            <div class="wpo-breadcumb-area" style="background-image: url('{% static 'assets/images/slider_images/photo_2023-09-12_11-10-20.jpg' %}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="wpo-breadcumb-wrap">
+                                <h2 style="color: white">Contact</h2>
+                                <ul>
+                                    <li><a href="{% url 'home' %}" style="color: #098542">Acceuil</a></li>
+                                    <li style="color: #098542"><span style="color: #098542">Contact</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- payment-section start-->
+        <div class="payment-section section-padding">
+            <div class="container">                    
+                <h3 style="text-align: center; color: black;">Contacter Nous </h3>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="payment-text">
+                            <br><br><br>
+                            {% comment %} <span>Donate Now</span>
+                            <h2>Donate Some Money & Save The Muslim Ummah.</h2> {% endcomment %}
+                            <h3>Contact:Dahira Layene CI</h3>
+                            <h3>Téléphone:+225 07 08 43 53 81</h3>
+                            <h3>Email:limamou.seck@gmail.com</h3>
+                            {% comment %} <p>How can we reject the faith in Allah? seeing that ye were without life, and He gave you life; then will He cause you to die, and will again bring you to life; and again to Him will ye return.</p> {% endcomment %}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wpo-donations-form">
+                            <h2>Contacter Nous</h2>
+                            <div class="row">
+                                <form id="contactForm">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                        <input type="text" class="form-control" name="name" id="fname" placeholder="First Name">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                        <input type="text" class="form-control" name="Phone" id="Phone" placeholder="Phone">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
+                                        <input type="text" class="form-control" name="Adress" id="Adress" placeholder="Address">
+                                    </div>
+                                    <div class="col-lg-12 col-12 form-group clearfix">
+                                        <textarea type="text" class="form-control" name="Message" id="Message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 col-12 form-group">
+                                        <button class="theme-btn" type="submit">Envoyer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- payment-section end-->
+
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+    
+                // Récupérer les valeurs du formulaire
+                var name = document.getElementById("fname").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("Phone").value;
+                var address = document.getElementById("Adress").value;
+                var message = document.getElementById("Message").value;
+    
+                // Afficher les données dans la console
+                console.log("Nom : " + name);
+                console.log("Email : " + email);
+                console.log("Téléphone : " + phone);
+                console.log("Adresse : " + address);
+                console.log("Message : " + message);
+    
+                // Vous pouvez envoyer les données au serveur depuis ici pour les traiter et les envoyer par e-mail.
+            // Inclure les modules requis
+            const express = require('express');
+            const nodemailer = require('nodemailer');
+            const bodyParser = require('body-parser');
+
+            // Créer une application Express
+            const app = express();
+            const port = 3000;
+
+            // Configuration du body-parser pour analyser les données POST
+            app.use(bodyParser.urlencoded({ extended: false }));
+            app.use(bodyParser.json());
+
+            // Configuration du transporteur SMTP pour Nodemailer
+            const transporter = nodemailer.createTransport({
+                service: 'Gmail',
+                auth: {
+                    user: 'mamerane1003@gmail.com',
+                    pass: 'layelayeAW10@'
+                }
+            });
+
+            // Route pour gérer le formulaire de contact
+            app.post('/envoyer-email', (req, res) => {
+                const name = req.body.name;
+                const email = req.body.email;
+                const phone = req.body.phone;
+                const address = req.body.address;
+                const message = req.body.message;
+
+                // Options de l'e-mail
+                const mailOptions = {
+                    from: 'votre_email@gmail.com',
+                    to: 'mamerane1003@gmail.com',
+                    subject: 'Formulaire de contact',
+                    text: `
+                        Nom: ${name}
+                        Email: ${email}
+                        Téléphone: ${phone}
+                        Adresse: ${address}
+                        Message: ${message}
+                    `
+                };
+
+                // Envoyer l'e-mail
+                transporter.sendMail(mailOptions, (error, info) => {
+                    if (error) {
+                        console.log(error);
+                        res.status(500).send('Erreur lors de l\'envoi de l\'e-mail.');
+                    } else {
+                        console.log('E-mail envoyé : ' + info.response);
+                        res.status(200).send('E-mail envoyé avec succès.');
+                    }
+                });
+            });
+
+            // Démarrer le serveur
+            app.listen(port, () => {
+                console.log(`Serveur démarré sur le port ${port}`);
+            });
+
+            });
+        </script>
+{% endblock %}

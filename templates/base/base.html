@@ -1,0 +1,576 @@
+{% extends 'index.html' %}
+ {% block content %} 
+ {% load static %}
+
+ 
+        <!-- start of hero -->
+        <section class="hero hero-style-1">
+            <div class="hero-slider">
+                <div class="slide">
+                    <div class="container">
+                        <img src="{% static 'assets/images/ACI.png' %}" alt class="slider-bg">
+                        <div class="row">
+                            <div class="col col-md-8 col-md-offset-2 slide-caption">
+                                <div class="slide-top">
+                                    <span>Dahira AhlouLahi  Côte d'Ivoire</span>
+                                </div>
+                                <div class="slide-title">
+                                    <h2>Dahira AhlouLahi  Côte d'Ivoire</h2>
+                                </div>
+                                <div class="btns">
+                                    <a href="#" class="theme-btn">Voir Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <img src="{% static 'assets/images/slider_images/photo_2023-09-12_11-09-24.jpg' %}" alt class="slider-bg">
+                        <div class="row">
+                            <div class="col col-md-8 col-md-offset-2 slide-caption">
+                                <div class="slide-top">
+                                    <span>Dahira AhlouLahi  Côte d'Ivoire</span>
+                                </div>
+                                <div class="slide-title">
+                                    <h2>Dahira AhlouLahi  Côte d'Ivoire</h2>
+                                </div>
+                                <div class="btns">
+                                    <a href="#" class="theme-btn">Voir Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} <div class="slide">
+                    <div class="container">
+                        <img src="{% static 'assets/images/ACI.png' %}" alt class="slider-bg">
+                        <div class="row">
+                            <div class="col col-md-8 col-md-offset-2 slide-caption">
+                                <div class="slide-top">
+                                    <span>Dahira AhlouLahi  Côte d'Ivoire</span>
+                                </div>
+                                <div class="slide-title">
+                                    <h2>Dahira AhlouLahi  Côte d'Ivoire</h2>
+                                </div>
+                                <div class="btns">
+                                    <a href="#" class="theme-btn">Voir Plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+        </section>
+        <!-- end of hero slider -->
+        <!-- wpo-about-area start -->
+        <div class="wpo-about-area-2 section-padding">
+            <div class="container">
+                <div class="wpo-about-wrap">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <div class="wpo-about-img-3">
+                                <img src="{% static 'assets/images/slider_images/photo_2023-09-12_11-09-48.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="wpo-about-text">
+                                <div class="wpo-section-title">
+                                    <span>A Propos de Nous</span>
+                                    <h3 style="text-transform: uppercase">DAHIRA LAYENE DE Côte d'Ivoire</h3>
+                                </div>
+                                <p style="text-align: justify; color: black;">C’est en 1964 que le Dahira des Layènes de Côte d’Ivoire a été créé à Abidjan. Il était présidé par Serigne Birane Sall, frère de Baye Libasse Sall de Dakar. Parmi les membres fondateurs figuraient Messieurs Ibrahima Ndione, Baye Abdoulaye Kébé, Libasse Sow, Mada Bèye, Seydina Diop dit Sangue, Ndiaga Niane, Ibrahima Diop de Gouye Mariama, etc.
+                                    L’appellation de « Saabas de Seydina Limamou Lahi Al Mahdiyou » (voir illustration), a été donnée à la suite du décès de Serigne Birane Sall, le 22 mars 1995, par le vénéré Chérif Mame Alassane Laye, 4ème Khalif Général des Layènes...</p>
+                                <div class="btns">
+                                    <a href="{% url 'about' %}" class="theme-btn" tabindex="0">Voir Plus</a>
+                                    <ul>
+                                        <li class="video-holder">
+                                            <a href="https://www.youtube.com/embed/lV208oOEw-s" class="video-btn" data-type="iframe" tabindex="0"></a>
+                                        </li>
+                                        <li class="video-text">
+                                            <a href="https://www.youtube.com/embed/lV208oOEw-s" class="video-btn" data-type="iframe" tabindex="0">
+                                                Regarder la video
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="wpo-about-wrap">                    
+                    <h3 style="text-align: center; color: black;">Revivez le 143éme Anniversaire de L'Appel 2023 AhlouLahi ABIDJAN   </h3>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7">
+                            <div class="wpo-about-img-3">
+                                <iframe width="575" height="515" style="border: 1px solid #098542;border-radius: 5px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)" src="https://www.youtube.com/embed/lV208oOEw-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="wpo-about-text">
+                                <p style="text-align: justify; color: black;font-size: 16px;">
+                                    "Au nom d’Allah le Miséricordieux, le Très Miséricordieux.
+                                    Louange à Allah.
+                                    Paix et salut sur Son prophète Mouhamed (PSL), sa famille et ses compagnons.
+                                    Nous adressons notre ziar révérentieux au Khalif Général de la Communauté Ahloulahi, Seydina
+                                    Mouhamadou Makhtar Lahi, Ibn Seydina Mandione Lahi, Ibn Seydina Imamah Lahi, Imami kouli
+                                    imaamil haramayni
+                                    <br>
+                                    Ziar aussi à tous les khalifs généraux des différentes confréries du Sénégal.
+                                    Salutations respectueuses à Cherif Cheikh Mbacké Lahi, nous saluons à travers votre illustre
+                                    personne toute la descendance de Seydina Limamou Lahi (psl)
+                                    Eminences Imams, oulémas et augustes représentants des Dahiras familles religieuses en Côte
+                                    d’Ivoire, chers invités..."</p>
+                                <!-- Bouton pour ouvrir la modale -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button type="button" class="btn btn-primary theme-btn" data-toggle="modal" data-target="#textModal">
+                                                Lire le texte complet
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="{% static 'assets/images/fichiers/Discours Appel 2023 Abidjan.pdf' %}" class="theme-btn video-btn" download="Discours_Appel_2023_Abidjan.pdf">
+                                                Le fichier PDF
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        {% comment %} <div class="col-lg-3 col-md-3">
+                            <div class="wpo-about-text">
+                                <a href="{% static 'assets/images/fichiers/Discours Appel 2023 Abidjan.pdf' %}" class="theme-btn video-btn" download="Discours_Appel_2023_Abidjan.pdf">Télécharger le fichier PDF</a>
+                            </div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+                {% comment %} <img src="{% static 'assets/images/slider/bg2.png' %}" alt=""> {% endcomment %}
+                {% comment %} <div class="container">
+                    <div class="wpo-about-img-3">
+                        <img src="{% static 'assets/images/slider_images/photo_2023-09-12_11-08-28.jpg' %}" alt="">
+                    </div>
+                </div> {% endcomment %}
+                <!-- Modale Bootstrap pour afficher le texte complet -->
+                <div class="modal fade" id="textModal" tabindex="-1" role="dialog" aria-labelledby="textModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="textModalLabel">Texte Complet</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="text-align: justify; color: black;">
+                                Au nom d’Allah le Miséricordieux, le Très Miséricordieux.
+                                Louange à Allah.
+                                Paix et salut sur Son prophète Mouhamed (PSL), sa famille et ses compagnons.
+                                Nous adressons notre ziar révérentieux au Khalif Général de la Communauté Ahloulahi, Seydina
+                                Mouhamadou Makhtar Lahi, Ibn Seydina Mandione Lahi, Ibn Seydina Imamah Lahi, Imami kouli
+                                imaamil haramayni.<br><br>
+                                Ziar aussi à tous les khalifs généraux des différentes confréries du Sénégal.
+                                Salutations respectueuses à Cherif Cheikh Mbacké Lahi, nous saluons à travers votre illustre
+                                personne toute la descendance de Seydina Limamou Lahi (psl)
+                                Eminences Imams, oulémas et augustes représentants des Dahiras familles religieuses en Côte
+                                d’Ivoire, chers invités<br><br>
+                                Mesdames, messieurs,
+                                Au nom de tous les membres du Dahira Saabas Seydina Limamou Lahi de Côte d'Ivoire, nous vous
+                                adressons nos vifs remerciements pour avoir fait le déplacement et se joindre à nous à cette belle
+                                occasion qui marque la commémoration du 143ème anniversaire de l'Appel de Seydina Limamou
+                                Lahi PSL.<br><br>
+                                (Et rappelle-toi Ibrahim, Ishaq et Ya'qub, Nos serviteurs puissants et clairvoyants). Dans le 45eme
+                                verset de la sourate Saad, wazkour ibaadana Ibrahim, wa isshakha, wa yakhouba, oulil aydi wale
+                                abssar où Allah SWT incite le prophète Mouhamed PSL à se rappeler de ses prédécesseurs qui ont
+                                ont défendu la parole de Dieu sur terre, nous édifie sur le sens et l'importance de cette
+                                commémoration.<br><br>
+                                Cette occasion annuelle, nous permet de se souvenir de celui que le Tout-puissant avait investi de la
+                                Mission de restaurer l'orthodoxie musulmane à la fin des temps, le Mahdi Seydina Limamou Lahi PSL
+                                qui lança, un dimanche matin premier (1er) Chaban 1301 de l'hégire, à l’âge de quarante (40) ans,
+                                son Appel à l’endroit des hommes et des Djinns.
+                                "ADJIBO DAHIYA LAHI, YA MAHCHARAL INS WAL DJIN INI RAASOULOULAHI ILEYKOUM" : (“Répondez
+                                à l'Appel de Dieu, O hommes et djinns, je suis l'envoyé de Dieu à vous").
+                                Il revivifia la religion musulmane, en appelant à l’unicité de Dieu et au respect du projet de société de
+                                l’islam basé sur l’amour du prochain, la tolérance, l’acceptation de l’autre, la justice sociale, la
+                                solidarité entre autres. Son plus grand miracle fut les cœurs impropres très attachés à la mondanité
+                                et aux idoles qu’il réussit à purifier pour en faire une communauté exemplaire de juste-milieu : la
+                                communauté Ahlou Lahi (les gens de Dieu).<br><br>
+                                Aujourd'hui plus d'un siècle après, son Appel retentit plus fort dans les tous les coins de la planète et
+                                son enseignement se montre comme l'évidente solution pour un monde divisé, instable quasiment
+                                perdu dans sa quête pour une vie sereine et paisible pour l'ensemble de ses habitants.
+                                Dans un contexte mondial très tendu où les foyers de violence se multiplient tous les jours,
+                                l'intolérance s'erigeant en règle, les valeurs spirituelles que nous ont inculquées nos vaillants guides
+                                religieux restent le seul garant d'un retour à la normale. C'est justement pour cette raison que la
+                                communauté Ahlou Lahi a choisi comme thème du 143è anniversaire de l'Appel: « La paix et le
+                                développement à la lumière des enseignements de Seydina Limamou Lahi PSL ».
+                                Chers frères et sœurs,<br><br>
+                                Les valeurs religieuses et universelles s'accordent autour d’un objectif commun : donner à l'être
+                                humain la place qu'il mérite. Il est garant et l'objectif de toute action de développement dont la paix
+                                et le principal fondement.
+                                Pas de développement sans paix, ceci Seydina Limamoulahi PSL, le Phare de l'Ouest, l’avait si bien
+                                compris que dans ses enseignements la paix et la justice sociale, occupent une place extrêmement
+                                importante. En effet, dans ses sermons, il déclare sans équivoque, entre autres : « Instaurez la paix
+                                entre vous, soyez cléments les uns envers les autres et soyez généreux les uns pour les autres. Dieu
+                                est, à l’égard des croyants, très Clément ».
+                                La paix est donc une notion holistique et intégrée. Elle est le fondement de la stabilité politique,
+                                économique et sociale visée par les programmes de développement, à savoir, assurer le vivre
+                                ensemble dans la paix et se libérer des troubles internes qui ruinent le pays et portent atteinte aux
+                                intérêts individuels et collectifs.<br><br>
+                                « De la terre Il vous a créés, et Il vous l'a fait peupler (et exploiter) » S9V61
+                                Oui, ce Verset de la sourate Hud nous enseigne la dimension spirituelle et religieuse du
+                                développement, avec la prise en charge de :
+                                - l'éducation de l’être humain à la foi et à la moralité ;
+                                - la consolidation de la paix et du vivre ensemble,
+                                - le renfoncement de l'équité et de la justice sociale
+                                - la protection des couches vulnérables
+                                - l'encouragement à l’enrichissement licite et le respect des deniers publics.
+                                Dans son troisième sermon Seydina Limamou Lahi dit:
+                                « Sachez que la religion c'est la générosité, l'amour et l'entraide. Dans la religion, polémiques et
+                                disputes sont interdites. Chercher à vous rabaisser l'un l'autre, à vous salir, à vous avilir et la rivalité
+                                sont également interdits »
+                                Chers Frères et Soeurs,<br><br>
+                                Le développement, n'est pas une fin en soi, il doit être un outil de consolidation de la paix et de
+                                l'équité et ceci occupe une place centrale dans le Message du Mahdi Seydina Limamou Lahi (PSL)
+                                pour la réalisation d’une vie stable dans toutes ses dimensions notamment spirituelle, sociale,
+                                politique et économique.
+                                Aujourd'hui, notre responsabilité est de s'abreuver de cette source intarissable, de perpétuer son
+                                enseignement et de le partager avec le reste du monde.
+                                Chers frères et sœurs,<br><br>
+                                Pour conclure, permettez-moi d’exprimer mes vifs remerciements à tous ceux qui ont contribué pour
+                                la réussite de cet événement. Dieu les connait tous, mais permettez-moi de citer particulièrement
+                                Monsieur Faman Touré, Président de la Chambre de Commerce et d’Industrie de Côte d’Ivoire, le
+                                Général El Hadj Daouda Niang Ambassadeur du Senegal en Côte d’Ivoire et le Consul général, Mme
+                                Dial Sané, Député Diaspora CEDEAO, El Hadj Seybatou AW, Président Directeur Général de AVENI-RE,
+                                El Hadj Mouhamadou Racine Kane, imam Ratib, Oustaz Adi Faye, président du Collectif des Imams et
+                                oulémas sénégalais de Côte d’Ivoire, Monsieur Mamadou Diané , Monsieur Babacar FALL, cadre à la
+                                BCEAO, Dr Faye COLY, Directeur Général de société et ceux qui nous ont accompagné pour la tenue
+                                de ces chants religieux, Alioune GUEYE, Oustaz Djamil SALL, Hadj Ousseynou KA, Président,
+                                fédération des Dahiras Tidianes, Mr Abdou KANE, Directeur Général de la SAFID, Mr Ibnou Abass
+                                Ndiaye, les kourels des Dahiras mourides, Mr Ibrahima Diop Président Dahiras Thienaba et le
+                                Directeur Général de la société NBCI, la Mairie de Treichville et la société de sécurité 3 A.
+                                Que la Paix et le Salut de Dieu Soient sur vous ainsi que vos familles.</p></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="timer-section"  style="background-image: url('{% static 'assets/images/slider_images/photo_2023-09-12_11-09-02.jpg' %}'); background-color: rgba(0, 0, 0, 0.5);">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="timer-text">
+                                <h2 style="color: black;">Heures de Prières</h2>
+                                <p>Heures de Prières Abidjan</p>
+                                <span>26 Safar 1445</span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="timer-num">
+                                <ul>
+                                    <li style="color: black;">Fajr<span>05:54</span></li>
+                                    <li style="color: black;">Dhuhr<span>13:47</span></li>
+                                    <li style="color: black;">Asr<span>17:18</span></li>
+                                    <li style="color: black;">Maghrib<span>20:12</span></li>
+                                    <li style="color: black;">Isha'a<span>21:35</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timer-shape1">
+                        <img src="assets/images/prayer-shape/2.png" alt="">
+                    </div>
+                    <div class="timer-shape2">
+                        <img src="assets/images/prayer-shape/1.png" alt="">
+                    </div>
+                    <div class="timer-shape3">
+                        <img src="assets/images/prayer-shape/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container">
+            <h3 style="text-align: center; color: black;">Gallery AhlouLahi ABIDJAN   </h3>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="{% static 'assets/images/IMG_5101.JPG' %}" data-lightbox="gallery">
+                        <img style="border-radius: 10px;height: 450px;width: 370px" src="{% static 'assets/images/IMG_5101.JPG' %}" alt="Image 1">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="{% static 'assets/images/IMG_5036.JPG' %}" data-lightbox="gallery">
+                        <img style="border-radius: 10px;height: 450px;width: 370px" src="{% static 'assets/images/IMG_5036.JPG' %}" alt="Image 2">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="{% static 'assets/images/IMG_4875.JPG' %}" data-lightbox="gallery">
+                        <img style="border-radius: 10px;height: 450px;width: 370px" src="{% static 'assets/images/IMG_4875.JPG' %}" alt="Image 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            lightbox.init();
+        </script>
+        
+
+        <br><br>
+                <!-- support-area start -->
+                <div class="support-area section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="progress-area">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-2 custom-grid">
+                                            <div class="progress-wrap">
+                                                <div class="progressbar" data-animate="false">
+                                                    <img style="width: 110px;height: 110px;" src="{% static 'assets/images/laprovidence_logo.png' %}" alt="Image 1">
+        
+                                                    {% comment %}<div class="circle" data-percent="56">
+                                                         <div></div> 
+                                                    </div>{% endcomment %}
+                                                </div>
+                                                {% comment %} <span>Mosque</span> {% endcomment %}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 custom-grid">
+                                            <div class="progress-wrap">
+                                                <div class="progressbar2" data-animate="false">
+                                                    <img style="width: 110px;height: 110px;" src="{% static 'assets/images/laprovidence_logo.png' %}" alt="Image 1">
+        
+                                                    {% comment %} <div class="circle" data-percent="45">
+                                                        <div></div>
+                                                    </div> {% endcomment %}
+                                                </div>
+                                                {% comment %} <span>Expenses</span> {% endcomment %}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 custom-grid">
+                                            <div class="progress-wrap">
+                                                <div class="progressbar3" data-animate="false">
+                                                    <img style="width: 110px;height: 110px;" src="{% static 'assets/images/laprovidence_logo.png' %}" alt="Image 1">
+        
+                                                    {% comment %} <div class="circle" data-percent="74">
+                                                        <div></div>                                            
+                                                    </div> {% endcomment %}    
+                                                </div>
+                                                {% comment %} <span>Feed Hungry</span> {% endcomment %}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 custom-grid">
+                                            <div class="progress-wrap">
+                                                <div class="progressbar3" data-animate="false">
+                                                    <img style="width: 110px;height: 110px;" src="{% static 'assets/images/laprovidence_logo.png' %}" alt="Image 1">
+        
+                                                    {% comment %} <div class="circle" data-percent="74">
+                                                        <div></div>                                              
+                                                    </div>{% endcomment %}   
+                                                </div>
+                                                {% comment %} <span>Feed Hungry</span> {% endcomment %}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 custom-grid">
+                                            <div class="progress-wrap">
+                                                <div class="progressbar3" data-animate="false">
+                                                    <img style="width: 110px;height: 110px;" src="{% static 'assets/images/laprovidence_logo.png' %}" alt="Image 1">
+        
+                                                    {% comment %} <div class="circle" data-percent="74">
+                                                        <div></div>                                               
+                                                    </div>{% endcomment %}  
+                                                </div>
+                                                {% comment %} <span>Feed Hungry</span> {% endcomment %}
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 custom-grid">
+                                            <div class="progress-wrap">
+                                                <div class="progressbar3" data-animate="false">
+                                                    <img style="width: 110px;height: 110px;" src="{% static 'assets/images/laprovidence_logo.png' %}" alt="Image 1">
+                                                    {% comment %} <div class="circle" data-percent="74">
+                                                        {% comment %} <div></div>                                             
+                                                        
+                                                    </div> {% endcomment %}
+                                                </div>
+                                                {% comment %} <span>Feed Hungry</span> {% endcomment %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- support-area start -->
+        <br>
+        <!-- wpo-about-area end -->
+
+        <!-- payment-section start-->
+        <div class="payment-section section-padding">
+            <div class="container">                    
+                <h3 style="text-align: center; color: black;">Contacter Nous </h3>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="payment-text">
+                            <br><br><br>
+                            {% comment %} <span>Donate Now</span>
+                            <h2>Donate Some Money & Save The Muslim Ummah.</h2> {% endcomment %}
+                            <h3>Contact:Dahira Layene CI</h3>
+                            <h3>Téléphone:+225 07 08 43 53 81</h3>
+                            <h3>Email:limamou.seck@gmail.com</h3>
+                            {% comment %} <p>How can we reject the faith in Allah? seeing that ye were without life, and He gave you life; then will He cause you to die, and will again bring you to life; and again to Him will ye return.</p> {% endcomment %}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wpo-donations-form">
+                            <h2>Contacter Nous</h2>
+                            <div class="row">
+                                <form id="contactForm">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                        <input type="text" class="form-control" name="name" id="fname" placeholder="First Name">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                                        <input type="text" class="form-control" name="Phone" id="Phone" placeholder="Phone">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
+                                        <input type="text" class="form-control" name="Adress" id="Adress" placeholder="Address">
+                                    </div>
+                                    <div class="col-lg-12 col-12 form-group clearfix">
+                                        <textarea type="text" class="form-control" name="Message" id="Message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 col-12 form-group">
+                                        <button class="theme-btn" type="submit">Envoyer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- payment-section end-->
+        <!-- wpo-event-area start -->
+        {% comment %} <div class="wpo-event-area-2 section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wpo-section-title">
+                            <span>Our Events</span>
+                            <h2>Our Upcomming event</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12 custom-grid">
+                        <div class="wpo-event-item">
+                            <div class="wpo-event-img">
+                                <img src="assets/images/event/img-3.jpg" alt="">
+                                <div class="thumb-text">
+                                    <span>25</span>
+                                    <span>NOV</span>
+                                </div>
+                            </div>
+                            <div class="wpo-event-text">
+                                <h2>Learn About Hajj</h2>
+                                <ul>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>
+                                    <li><i class="fi ti-location-pin"></i>Newyork City</li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a href="event-single.html">Learn More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 custom-grid">
+                        <div class="wpo-event-item">
+                            <div class="wpo-event-img">
+                                <img src="assets/images/event/img-4.jpg" alt="">
+                                <div class="thumb-text-2">
+                                    <span>25</span>
+                                    <span>NOV</span>
+                                </div>
+                            </div>
+                            <div class="wpo-event-text">
+                                <h2>Islamic Teaching Event</h2>
+                                <ul>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>
+                                    <li><i class="fi ti-location-pin"></i>Newyork City</li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a href="event-single.html">Learn More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        <!-- wpo-event-area end -->
+        <!-- blog-area start -->
+        {% comment %} <div class="blog-area section-padding">
+            <div class="container">
+                <div class="col-l2">
+                    <div class="wpo-section-title">
+                        <span>From Our Blog</span>
+                        <h2>Latest News</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-12 custom-grid">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="assets/images/blog/img-4.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3><a href="blog-single.html">The Importance of Marriage in Islam.</a></h3>
+                                <ul class="post-meta">
+                                    <li><img src="assets/images/blog/admin.jpg" alt=""></li>
+                                    <li><a href="#">Jenefar Jany</a></li>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 21 Jan 2020</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 custom-grid">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="assets/images/blog/img-5.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3><a href="blog-single.html">Salat is the best exercise for body fitness</a></h3>
+                                <ul class="post-meta">
+                                    <li><img src="assets/images/blog/admin.jpg" alt=""></li>
+                                    <li><a href="#">Jenefar Jany</a></li>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 21 Jan 2020</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 custom-grid">
+                        <div class="blog-item b-0">
+                            <div class="blog-img">
+                                <img src="assets/images/blog/img-6.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3><a href="blog-single.html">Salat is the best exercise for body fitness</a></h3>
+                                <ul class="post-meta">
+                                    <li><img src="assets/images/blog/admin.jpg" alt=""></li>
+                                    <li><a href="#">Jenefar Jany</a></li>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 21 Jan 2020</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        <!-- blog-area start -->
+
+        
+ {% endblock %}

@@ -1,0 +1,155 @@
+{% load static %}
+<header id="header" class="wpo-site-header wpo-header-style-2">
+    {% comment %} <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6 col-sm-7 col-12">
+                    <div class="contact-intro">
+                        <ul>
+                            <li><i class="fi ti-location-pin"></i>28 Street, New York City, USA</li>
+                            <li><i class="fi flaticon-envelope"></i> Ummah@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-sm-5 col-12">
+                    <div class="contact-info">
+                        <ul>
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                            <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            <li><a href="#"><i class="ti-google"></i></a></li>
+                            <li><a class="theme-btn-s2" href="donate.html">Make Donation </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end topbar --> {% endcomment %}
+    <div class="site-header header-style-1">
+        <nav class="navigation navbar navbar-default original">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="{% static 'assets/images/logo_ci.png' %}" alt=""></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li class="menu-item-has-children">
+                            <a href="{% url 'home' %}">Acceuil</a>
+                            {% comment %} <ul class="sub-menu">
+                                <li><a href="index.html">Home style 1</a></li>
+                                <li><a href="index-2.html">Home style 2</a></li>
+                                <li><a href="index-3.html">Home style 3</a></li>
+                                <li><a href="index-4.html">Home style 4</a></li>
+                            </ul> {% endcomment %}
+                        </li>
+                        <li><a href="{% url 'about' %}">A Propos de Nous</a></li>
+                        {% comment %} <li class="menu-item-has-children">
+                            <a href="#">Service</a>
+                            <ul class="sub-menu">
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="service-single.html">Service Single</a></li>
+                            </ul>
+                        </li> {% endcomment %}
+                        <li><a href="{% url 'mediatheque' %}">Médiathèque
+                        </a></li>
+                        <li><a href="{% url 'bibliotheque' %}">Bibliothèque
+                        </a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Evénement</a>
+                            {% comment %} <ul class="sub-menu">
+                                <li><a href="event.html">Evénement</a></li>
+                                <li><a href="event-single.html">Event Single</a></li>
+                            </ul> {% endcomment %}
+                        </li>
+                        {% comment %} <li class="menu-item-has-children">
+                            <a href="#">Evénement</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog right sidebar</a></li>
+                                <li><a href="blog-left.html">Blog left sidebar</a></li>
+                                <li><a href="blog-fulwidth.html">Blog fullwidth</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Blog details</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-single.html">Blog details right sidebar</a></li>
+                                        <li><a href="blog-single-left.html">Blog details left sidebar</a></li>
+                                        <li><a href="blog-single-fluid.html">Blog details fullwidth</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> {% endcomment %}
+                        <li class="menu-item-has-children">
+                            <a href="{% url 'contact' %}">Contact</a>
+                            {% comment %} <ul class="sub-menu">
+                                <li><a href="blog.html">Blog right sidebar</a></li>
+                                <li><a href="blog-left.html">Blog left sidebar</a></li>
+                                <li><a href="blog-fulwidth.html">Blog fullwidth</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Blog details</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-single.html">Blog details right sidebar</a></li>
+                                        <li><a href="blog-single-left.html">Blog details left sidebar</a></li>
+                                        <li><a href="blog-single-fluid.html">Blog details fullwidth</a></li>
+                                    </ul>
+                                </li>
+                            </ul> {% endcomment %}
+                        </li>
+                    </ul>
+                </div><!-- end of nav-collapse -->
+                <div class="cart-search-contact">
+                    <div class="header-search-form-wrapper">
+                        {% comment %} <button class="search-toggle-btn"><i class="ti-search"></i></button> {% endcomment %}
+                        <div class="header-search-form">
+                            <form>
+                                {% comment %} <div>
+                                    <input type="text" class="form-control" placeholder="Search here...">
+                                    <button type="submit"><i class="fi flaticon-search"></i></button>
+                                </div> {% endcomment %}
+                            </form>
+                        </div>
+                    </div>
+                    {% comment %} <div class="mini-cart">
+                        <button class="cart-toggle-btn"> <i class="fi flaticon-shopping-cart"></i> <span class="cart-count">02</span></button>
+                        <div class="mini-cart-content">
+                            <div class="mini-cart-title">
+                                <p>Shopping Cart</p>
+                            </div>
+                            <div class="mini-cart-items">
+                                <div class="mini-cart-item clearfix">
+                                    <div class="mini-cart-item-image">
+                                        <a href="#"><img src="assets/images/shop/mini/img-1.jpg" alt="Hoodie with zipper"></a>
+                                    </div>
+                                    <div class="mini-cart-item-des">
+                                        <a href="#">Hoodie with zipper</a>
+                                        <span class="mini-cart-item-price">$25.15</span>
+                                        <span class="mini-cart-item-quantity">x 1</span>
+                                    </div>
+                                </div>
+                                <div class="mini-cart-item clearfix">
+                                    <div class="mini-cart-item-image">
+                                        <a href="#"><img src="assets/images/shop/mini/img-2.jpg" alt="Hoodie with zipper"></a>
+                                    </div>
+                                    <div class="mini-cart-item-des">
+                                        <a href="#">Hoodie with zipper</a>
+                                        <span class="mini-cart-item-price">$12.99</span>
+                                        <span class="mini-cart-item-quantity">x 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-cart-action clearfix">
+                                <span class="mini-checkout-price">$255.12</span>
+                                <a href="#" class="theme-btn-s4">View Cart</a>
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+            </div><!-- end of container -->
+        </nav>
+    </div>
+</header>
