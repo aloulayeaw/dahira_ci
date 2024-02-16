@@ -42,27 +42,74 @@
                         </div>
                     </div>
                 </div>
-                {% comment %} <div class="slide">
-                    <div class="container">
-                        <img src="{% static 'assets/images/ACI.png' %}" alt class="slider-bg">
-                        <div class="row">
-                            <div class="col col-md-8 col-md-offset-2 slide-caption">
-                                <div class="slide-top">
-                                    <span>Dahira AhlouLahi  Côte d'Ivoire</span>
-                                </div>
-                                <div class="slide-title">
-                                    <h2>Dahira AhlouLahi  Côte d'Ivoire</h2>
-                                </div>
-                                <div class="btns">
-                                    <a href="#" class="theme-btn">Voir Plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> {% endcomment %}
                 </div>
             </div>
         </section>
-        <!-- end of hero slider -->
+
+        {% comment %} <div class="wpo-about-area-2 section-padding">
+            <div class="container">
+                <div class="wpo-about-wrap">
+                    <div class="row pagination-wrapper pagination-wrapper-left">
+                        <div class="col-lg-12 text-center pg-pagination">
+                            <h4>APPEL JJ - </h4>
+                            <div id="clockdiv" class="clock-timer d-flex align-items-center justify-content-center">
+                                <div class="clock-item mr-3">
+                                    <span id="dayss">00</span>
+                                    <div class="smalltext">Jours</div>
+                                </div>
+                                <div class="clock-item mr-3">
+                                    <span id="hourss">00</span>
+                                    <div class="smalltext">Heures</div>
+                                </div>
+                                <div class="clock-item mr-3">
+                                    <span id="minutess">00</span>
+                                    <div class="smalltext">Minutes</div>
+                                </div>
+                                <div class="clock-item">
+                                    <span id="secondss">00</span>
+                                    <div class="smalltext">Secondes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        
+        
+        
+        
+        <script>
+            var countDownDate = new Date("Mar 2, 2024 00:00:00").getTime();
+        
+            var x = setInterval(function() {
+        
+                var now = new Date().getTime();
+        
+                var distance = countDownDate - now;
+        
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                document.getElementById("dayss").innerHTML = formatTime(days);
+                document.getElementById("hourss").innerHTML = formatTime(hours);
+                document.getElementById("minutess").innerHTML = formatTime(minutes);
+                document.getElementById("secondss").innerHTML = formatTime(seconds);
+        
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("clockdiv").innerHTML = "<span class='expired'>EXPIRÉ</span>";
+                }
+            }, 1000);
+        
+            function formatTime(time) {
+                return time < 10 ? "0" + time : time;
+            }
+        </script>
+        
+        
         <!-- wpo-about-area start -->
         <div class="wpo-about-area-2 section-padding">
             <div class="container">
@@ -104,8 +151,8 @@
                     <br><br>
                     <div class="row">
                         <div class="col-lg-7 col-md-7">
-                            <div class="wpo-about-img-3">
-                                <iframe width="575" height="515" style="border: 1px solid #098542;border-radius: 5px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)" src="https://www.youtube.com/embed/lV208oOEw-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="wpo-about-img-3 embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" style="border: 1px solid #098542; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)" src="https://www.youtube.com/embed/lV208oOEw-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-5">
@@ -122,36 +169,25 @@
                                     Salutations respectueuses à Cherif Cheikh Mbacké Lahi, nous saluons à travers votre illustre
                                     personne toute la descendance de Seydina Limamou Lahi (psl)
                                     Eminences Imams, oulémas et augustes représentants des Dahiras familles religieuses en Côte
-                                    d’Ivoire, chers invités..."</p>
-                                <!-- Bouton pour ouvrir la modale -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <button type="button" class="btn btn-primary theme-btn" data-toggle="modal" data-target="#textModal">
-                                                Lire le texte complet
-                                            </button>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a href="{% static 'assets/images/fichiers/Discours Appel 2023 Abidjan.pdf' %}" class="theme-btn video-btn" download="Discours_Appel_2023_Abidjan.pdf">
-                                                Le fichier PDF
-                                            </a>
-                                        </div>
+                                    d’Ivoire, chers invités..."
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6" style="padding: 5px;">
+                                        <button type="button" class="btn btn-primary theme-btn" data-toggle="modal" data-target="#textModal">
+                                            Lire le texte complet
+                                        </button>
                                     </div>
+                                    <div class="col-md-6" style="padding: 5px;">
+                                        <a href="{% static 'assets/images/fichiers/Discours Appel 2023 Abidjan.pdf' %}" class="theme-btn video-btn" download="Discours_Appel_2023_Abidjan.pdf">
+                                            Le fichier PDF
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        {% comment %} <div class="col-lg-3 col-md-3">
-                            <div class="wpo-about-text">
-                                <a href="{% static 'assets/images/fichiers/Discours Appel 2023 Abidjan.pdf' %}" class="theme-btn video-btn" download="Discours_Appel_2023_Abidjan.pdf">Télécharger le fichier PDF</a>
-                            </div>
-                        </div> {% endcomment %}
                     </div>
+                    
                 </div>
-                {% comment %} <img src="{% static 'assets/images/slider/bg2.png' %}" alt=""> {% endcomment %}
-                {% comment %} <div class="container">
-                    <div class="wpo-about-img-3">
-                        <img src="{% static 'assets/images/slider_images/photo_2023-09-12_11-08-28.jpg' %}" alt="">
-                    </div>
-                </div> {% endcomment %}
-                <!-- Modale Bootstrap pour afficher le texte complet -->
                 <div class="modal fade" id="textModal" tabindex="-1" role="dialog" aria-labelledby="textModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -292,38 +328,6 @@
                         <img src="assets/images/prayer-shape/3.png" alt="">
                     </div>
                 </div>
-                {% comment %} <br><br><br>
-                <div class="timer-section"  style="background-image: url('{% static 'assets/images/slider_images/photo_2023-09-12_11-09-02.jpg' %}'); background-color: rgba(0, 0, 0, 0.5);">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="timer-text">
-                                <h2 style="color: black;">Heures de Prières</h2>
-                                <p>Heures de Prières Abidjan</p>
-                                <span>26 Safar 1445</span>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-md-offset-1">
-                            <div class="timer-num">
-                                <ul>
-                                    <li style="color: black;">Fajr<span>05:54</span></li>
-                                    <li style="color: black;">Dhuhr<span>13:47</span></li>
-                                    <li style="color: black;">Asr<span>17:18</span></li>
-                                    <li style="color: black;">Maghrib<span>20:12</span></li>
-                                    <li style="color: black;">Isha'a<span>21:35</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timer-shape1">
-                        <img src="assets/images/prayer-shape/2.png" alt="">
-                    </div>
-                    <div class="timer-shape2">
-                        <img src="assets/images/prayer-shape/1.png" alt="">
-                    </div>
-                    <div class="timer-shape3">
-                        <img src="assets/images/prayer-shape/3.png" alt="">
-                    </div>
-                </div> {% endcomment %}
             </div>
         </div>
         <br>
@@ -333,26 +337,27 @@
 
         <br>
         <div class="container">
-            <h3 style="text-align: center; color: black;">Gallery AhlouLahi ABIDJAN   </h3>
+            <h3 style="text-align: center; color: black;">Gallery AhlouLahi ABIDJAN</h3>
             <br><br>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <a href="{% static 'assets/images/IMG_5101.JPG' %}" data-lightbox="gallery">
-                        <img style="border-radius: 10px;height: 390px;width: 420px" src="{% static 'assets/images/IMG_5101.JPG' %}" alt="Image 1">
+                        <img style="border-radius: 10px; height: 390px; width: 100%;" src="{% static 'assets/images/IMG_5101.JPG' %}" alt="Image 1">
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <a href="{% static 'assets/images/IMG_5036.JPG' %}" data-lightbox="gallery">
-                        <img style="border-radius: 10px;height: 390px;width: 420px" src="{% static 'assets/images/IMG_5036.JPG' %}" alt="Image 2">
+                        <img style="border-radius: 10px; height: 390px; width: 100%;" src="{% static 'assets/images/IMG_5036.JPG' %}" alt="Image 2">
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <a href="{% static 'assets/images/IMG_4875.JPG' %}" data-lightbox="gallery">
-                        <img style="border-radius: 10px;height: 390px;width: 420px" src="{% static 'assets/images/IMG_4875.JPG' %}" alt="Image 3">
+                        <img style="border-radius: 10px; height: 390px; width: 100%;" src="{% static 'assets/images/IMG_4875.JPG' %}" alt="Image 3">
                     </a>
                 </div>
             </div>
         </div>
+        
         
         <script>
             lightbox.init();

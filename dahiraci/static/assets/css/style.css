@@ -8326,6 +8326,20 @@ wpo-blog sidebar
     }
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\000032222}}
+.conference-counter-cover {
+  background-color: #007F3E;
+  color: #fff;
+  padding: 32px 30px 26px;
+  position: relative;
+  z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/localhost\/giner-html\/template\/assets\/scss\/_site\.scss}line{font-family:\000032228}}
+  .conference-counter-cover h4 {
+    color: #fff;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+    margin-bottom: 2px; }
+
 .wpo-blog-single-section .comment-respond .form-inputs>input:nth-child(2) {
     width: 49%;
     float: right;
