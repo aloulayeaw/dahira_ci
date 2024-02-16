@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+ {% block content %} 
+ {% load static %}
+
+
+        <!-- start of hero -->
+            <div class="wpo-breadcumb-area" style="background-image: url('{% static 'assets/images/slider_images/photo_2023-09-12_11-10-20.jpg' %}'); background-color: rgba(0, 0, 0, 0.5);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="wpo-breadcumb-wrap">
+                                <h2 style="color: white">Médiathèque</h2>
+                                <ul>
+                                    <li><a href="{% url 'home' %}" style="color: #098542">Acceuil</a></li>
+                                    <li style="color: #098542"><span style="color: #098542">Médiathèque</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="{% static 'assets/images/slider_images/photo_2023-09-12_11-09-48.jpg' %}" data-lightbox="gallery">
+                            <img style="border-radius: 10px;height: 480px;width: 530px,paddind:5px;" src="{% static 'assets/images/slider_images/photo_2023-09-12_11-09-48.jpg' %}" alt="Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% static 'assets/images/slider_images/photo_2023-09-12_11-08-31.jpg' %}" data-lightbox="gallery">
+                            <img style="border-radius: 10px;height: 480px;width: 530px,paddind:5px;" src="{% static 'assets/images/slider_images/photo_2023-09-12_11-08-31.jpg' %}" alt="Image 2">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% static 'assets/images/slider_images/photo_2023-09-12_11-10-14.jpg' %}" data-lightbox="gallery">
+                            <img style="border-radius: 10px;height: 480px;width: 530px,paddind:5px;" src="{% static 'assets/images/slider_images/photo_2023-09-12_11-10-14.jpg' %}" alt="Image 3">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% static 'assets/images/slider_images/photo_2023-03-03_10-23-27.jpg' %}" data-lightbox="gallery">
+                            <img style="border-radius: 10px;height: 480px;width: 530px,paddind:5px;" src="{% static 'assets/images/slider_images/photo_2023-03-03_10-23-27.jpg' %}" alt="Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% static 'assets/images/slider_images/photo_2023-09-12_11-10-02.jpg' %}" data-lightbox="gallery">
+                            <img style="border-radius: 10px;height: 480px;width: 530px,paddind:5px;" src="{% static 'assets/images/slider_images/photo_2023-09-12_11-10-02.jpg' %}" alt="Image 2">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{% static 'assets/images/slider_images/photo_2023-09-12_11-10-11.jpg' %}" data-lightbox="gallery">
+                            <img style="border-radius: 10px;height: 480px;width: 530px,paddind:5px;" src="{% static 'assets/images/slider_images/photo_2023-09-12_11-10-11.jpg' %}" alt="Image 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                lightbox.init();
+            </script>
+
+{% endblock %}

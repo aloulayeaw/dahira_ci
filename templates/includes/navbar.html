@@ -1,0 +1,45 @@
+{% load static %}
+<header id="header" class="wpo-site-header wpo-header-style-2">
+    <div class="site-header header-style-1">
+        <nav class="navigation navbar navbar-default original">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="{% static 'assets/images/logo_ci.png' %}" alt=""></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li class="menu-item-has-children">
+                            <a href="{% url 'home' %}">Acceuil</a>
+                        </li>
+                        <li><a href="{% url 'about' %}">A Propos de Nous</a></li>
+                        <li><a href="{% url 'mediatheque' %}">Médiathèque
+                        </a></li>
+                        <li><a href="{% url 'bibliotheque' %}">Bibliothèque
+                        </a></li>
+                        <li class="menu-item-has-children">
+                            <a href="{% url "blog_detail" %}">Blog</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-search-contact">
+                    <div class="header-search-form-wrapper">
+                        <div class="header-search-form">
+                            <form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
