@@ -24,11 +24,14 @@ def mediatheque(request):
 
     return render(request, 'base/mediatheque.html')
 
+<<<<<<< HEAD
 def blog_detail(request):
     
 
     return render(request, 'base/blog_detail.html')
 
+=======
+>>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
 def bibliotheque(request):
     
 
