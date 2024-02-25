@@ -11,5 +11,6 @@ urlpatterns = [
     path('kedougou', views.destinationTwo, name='destinationTwo'),
     path('blog', views.blog , name='blog'),
     path('blog_detail', views.blog_detail , name='blog_detail'),
+    path('actualite', views.actualite , name='actualite'),
     path('details/<str:id>', views.details , name='details'),
 ]

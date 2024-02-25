@@ -19,6 +19,11 @@ def blog(request):
 
     return render(request, 'base/blog.html')
 
+def actualite(request):
+    
+
+    return render(request, 'base/actualite.html')
+
 def mediatheque(request):
     
 
