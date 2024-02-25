@@ -19,12 +19,7 @@
                     </div>
                 </div>
             </div>
-
-<<<<<<< HEAD
         <br></br><br>
-=======
-
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
         <!-- payment-section start-->
         <div class="payment-section section-padding">
             <div class="container">                    
@@ -34,19 +29,16 @@
                     <div class="col-md-6">
                         <div class="payment-text">
                             <br><br><br>
-<<<<<<< HEAD
                             <h3>Contact:Dahira Layene CI</h3>
                             <h3>Téléphone:+225 07 08 43 53 81</h3>
                             <h3>Email:limamou.seck@gmail.com</h3>
                         
-=======
                             {% comment %} <span>Donate Now</span>
                             <h2>Donate Some Money & Save The Muslim Ummah.</h2> {% endcomment %}
                             <h3>Contact:Dahira Layene CI</h3>
                             <h3>Téléphone:+225 07 08 43 53 81</h3>
                             <h3>Email:limamou.seck@gmail.com</h3>
                             {% comment %} <p>How can we reject the faith in Allah? seeing that ye were without life, and He gave you life; then will He cause you to die, and will again bring you to life; and again to Him will ye return.</p> {% endcomment %}
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -84,46 +76,30 @@
         <script>
             document.getElementById("contactForm").addEventListener("submit", function (event) {
                 event.preventDefault();
-<<<<<<< HEAD
-
-=======
-    
-                // Récupérer les valeurs du formulaire
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
                 var name = document.getElementById("fname").value;
                 var email = document.getElementById("email").value;
                 var phone = document.getElementById("Phone").value;
                 var address = document.getElementById("Adress").value;
                 var message = document.getElementById("Message").value;
     
-<<<<<<< HEAD
-=======
-                // Afficher les données dans la console
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
                 console.log("Nom : " + name);
                 console.log("Email : " + email);
                 console.log("Téléphone : " + phone);
                 console.log("Adresse : " + address);
                 console.log("Message : " + message);
-    
-<<<<<<< HEAD
-=======
+
                 // Vous pouvez envoyer les données au serveur depuis ici pour les traiter et les envoyer par e-mail.
             // Inclure les modules requis
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
             const express = require('express');
             const nodemailer = require('nodemailer');
             const bodyParser = require('body-parser');
 
-<<<<<<< HEAD
             const app = express();
             const port = 3000;
 
             app.use(bodyParser.urlencoded({ extended: false }));
             app.use(bodyParser.json());
 
-
-=======
             // Créer une application Express
             const app = express();
             const port = 3000;
@@ -133,7 +109,6 @@
             app.use(bodyParser.json());
 
             // Configuration du transporteur SMTP pour Nodemailer
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
             const transporter = nodemailer.createTransport({
                 service: 'Gmail',
                 auth: {
@@ -142,21 +117,14 @@
                 }
             });
 
-<<<<<<< HEAD
-=======
-            // Route pour gérer le formulaire de contact
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
             app.post('/envoyer-email', (req, res) => {
                 const name = req.body.name;
                 const email = req.body.email;
                 const phone = req.body.phone;
                 const address = req.body.address;
                 const message = req.body.message;
-<<<<<<< HEAD
-=======
 
                 // Options de l'e-mail
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
                 const mailOptions = {
                     from: 'votre_email@gmail.com',
                     to: 'mamerane1003@gmail.com',
@@ -170,10 +138,6 @@
                     `
                 };
 
-<<<<<<< HEAD
-=======
-                // Envoyer l'e-mail
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
                 transporter.sendMail(mailOptions, (error, info) => {
                     if (error) {
                         console.log(error);
@@ -185,10 +149,6 @@
                 });
             });
 
-<<<<<<< HEAD
-=======
-            // Démarrer le serveur
->>>>>>> d0a5e919d2f864f29f246c5777f7be040755b729
             app.listen(port, () => {
                 console.log(`Serveur démarré sur le port ${port}`);
             });
