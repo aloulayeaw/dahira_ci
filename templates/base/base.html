@@ -317,7 +317,7 @@
                                 <ul>
                                     <li style="color: black;">Diner<span>19h00</span></li>
                                     <li style="color: black;">Accueil et Mise en Place<span>20h00</span></li>
-                                    <li style="color: black;">Allocatins de bienvenue<span>20h00-20h30</span></li>
+                                    <li style="color: black;">Allocations de bienvenue<span>20h00-20h30</span></li>
                                     <li style="color: black;">Priére pour la Paix au Sénégal et Cote d'Ivoire<span>20h30-21h00</span></li>
                                     <li style="color: black;">Conférence et Chants Religiex<span>21h-01h</span></li>
                                     <li style="color: black;">Bénédiction de Cloture<span>01h00</span></li>
@@ -366,6 +366,10 @@
                         <img style="border-radius: 10px; height: 390px; width: 100%;" src="{% static 'assets/images/IMG_4875.JPG' %}" alt="Image 3">
                     </a>
                 </div>
+            </div>
+            <br>
+            <div class="btns">
+                <a href="{% url "mediatheque" %}" class="theme-btn">Voir Album</a>
             </div>
         </div>
         
@@ -470,7 +474,7 @@
         <br>
         <!-- wpo-about-area end -->
 
-        <!-- payment-section start-->
+        {% comment %} <!-- payment-section start-->
         <div class="payment-section section-padding">
             <div class="container">                    
                 <h3 style="text-align: center; color: black;">Contacter Nous </h3>
@@ -513,5 +517,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> {% endcomment %}
  {% endblock %}
